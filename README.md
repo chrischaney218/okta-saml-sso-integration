@@ -1,10 +1,29 @@
 # Okta SAML SSO Integration — IAM Engineering Portfolio
 
-> **Status:** Planned lab reconstruction. This repository does **not** contain employer systems, screenshots, or confidential configuration. The author has production experience integrating approximately 20 Okta applications, primarily using SAML. The lab described below must be completed and verified before being presented as finished work.
+> **Status:** Lab in progress. This repository does **not** contain employer systems, screenshots, or confidential configuration. The author has production experience integrating approximately 20 Okta applications, primarily using SAML. The lab described below must be completed and verified before being presented as finished work.
 
 ## Problem statement
 Centralize application authentication with Okta, enforce MFA, and reduce reliance on application-specific passwords.
+## Phase 1: Okta Application Integration
 
+**Objective:** Create and configure an Okta application integration in a personal development environment as the foundation for a SAML 2.0 SSO implementation.
+
+### Configuration Completed
+
+- Created an application named `IAM Portfolio - SAML Lab`.
+- Selected SAML 2.0 as the authentication protocol.
+- Configured the service provider's ACS URL and Entity ID using its published metadata.
+- Confirmed the application status is Active.
+- Reviewed application settings and confirmed provisioning is set to None, because this project focuses on SAML authentication rather than SCIM provisioning.
+
+### Evidence
+
+- Application overview screenshot: `01-okta-application-overview.png`
+- SAML configuration screenshot: Pending
+
+### Current Status
+
+The Okta application has been created and activated. End-to-end SAML authentication testing is still pending.
 ## Lab architecture
 ```mermaid
 flowchart LR
