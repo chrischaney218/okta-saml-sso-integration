@@ -18,17 +18,13 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 ### Evidence
 
-- Application overview screenshot: <box background="surface-secondary" radius="lg" padding={3} gap={2}>
-  <text color="secondary" size="xs">Copy this exact Markdown, without backticks:</text>
-  <text preserveWhitespace size="sm">- Application overview screenshot:</text>
-  <text preserveWhitespace size="sm">![Okta SAML Application Overview](screenshots/01-okta-application-overview.png)</text>
-  <row justify="end">
-    <button size="sm" color="secondary" variant="outline" onClick={()=>GenUI.copy("- Application overview screenshot:\n\n  ![Okta SAML Application Overview](screenshots/01-okta-application-overview.png)")}>
-      <icon name="copy" size="xs"/> Copy Markdown
-    </button>
-  </row>
-</box>
-- SAML configuration screenshot: Pending
+
+**Application Overview**
+
+![Okta SAML Application Overview](screenshots/01-okta-application-overview.png)
+
+**SAML Configuration:** Pending
+
 
 ### Current Status
 
