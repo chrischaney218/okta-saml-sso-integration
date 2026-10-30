@@ -18,7 +18,7 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 ### Evidence
 
-- Application overview screenshot: `01-okta-application-overview.png`
+- Application overview screenshot: `![Okta SAML Application Overview](screenshots/01-okta-application-overview.png)`
 - SAML configuration screenshot: Pending
 
 ### Current Status
