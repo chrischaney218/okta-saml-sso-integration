@@ -1,6 +1,6 @@
 # Okta SAML SSO Integration — IAM Engineering Portfolio
 
-> **Status:** Lab in progress. This repository does **not** contain employer systems, screenshots, or confidential configuration. The author has production experience integrating approximately 20 Okta applications, primarily using SAML. The lab described below must be completed and verified before being presented as finished work.
+> **Status:** Lab in progress. This repository does **not** contain employer systems, screenshots from personal lab, or confidential configuration. The author has production experience integrating approximately 20 Okta applications, primarily using SAML. The lab described below must be completed and verified before being presented as finished work.
 
 ## Problem statement
 Centralize application authentication with Okta, enforce MFA, and reduce reliance on application-specific passwords.
