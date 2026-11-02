@@ -23,7 +23,9 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 ![Okta SAML Application Overview](screenshots/01-okta-application-overview.png)
 
-**SAML Configuration:** Pending
+**Okta Identity Provider Metadata**
+
+![Okta IdP Metadata](screenshots/02-okta-idp-metadata.png)
 
 
 ### Current Status
