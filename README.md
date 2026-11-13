@@ -39,7 +39,9 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 **Validation status:** Metadata upload confirmed. SAML trust configuration and end-to-end authentication have not yet been verified.
 
-**Evidence:** Screenshot #3 — Okta IdP metadata import into SAML BOX.
+**Evidence:** 
+
+![SAML BOX IdP Metadata Import]()
 
 ### Current Status
 
