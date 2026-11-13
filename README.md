@@ -43,6 +43,23 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 ![Okta IdP Metadata Upload](screenshots/Oktametadata%20upload.png)
 
+### Phase 3: SAML Trust Configuration Verification
+
+**Objective:** Validate the SAML Service Provider configuration between Okta and SAML BOX before authentication testing.
+
+**Configuration Review:**
+- Verified that the Okta Audience URI (`saml-box`) matches the SAML BOX SP Entity ID.
+- Confirmed that the Single Sign-On URL matches the ACS endpoint published in SAML BOX SP metadata.
+- Reviewed the Recipient URL and Destination URL configurations.
+- Confirmed that both SAML Response and Assertion Signature settings are configured as Signed.
+- Verified that the Okta signing certificate is Active, with an expiration year of 2036.
+
+**Validation Status:** SP Entity ID and ACS URL match the published SP metadata. Signing settings and certificate status were reviewed. Certificate trust and end-to-end SSO authentication remain unverified.
+
+**Evidence — Screenshot #4:**
+
+[![Okta SAML Trust Configuration](screenshots/04-okta-saml-trust-configuration.png)](screenshots/04-okta-saml-trust-configuration.png)
+
 ### Current Status
 
 The Okta application has been created and activated. End-to-end SAML authentication testing is still pending.
