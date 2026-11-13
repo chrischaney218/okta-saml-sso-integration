@@ -41,7 +41,7 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 **Evidence:** 
 
-![SAML BOX IdP Metadata Import]()
+![Okta IdP Metadata Upload](screenshots/Oktametadata%20upload.png)
 
 ### Current Status
 
