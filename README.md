@@ -27,6 +27,19 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 ![Okta IdP Metadata](screenshots/02-okta-idp-metadata.png)
 
+### Phase 2: Okta IdP Metadata Exchange
+
+**Objective:** Establish the SAML metadata exchange between Okta (Identity Provider) and SAML BOX (Service Provider).
+
+**Implementation:**
+- Downloaded the SAML Identity Provider metadata XML from the Okta application.
+- Uploaded the Okta IdP metadata XML to SAML BOX.
+- Confirmed that SAML BOX received the metadata and displayed the Okta issuer (Entity ID).
+- Sanitized the evidence screenshot to protect tenant-specific information.
+
+**Validation status:** Metadata upload confirmed. SAML trust configuration and end-to-end authentication have not yet been verified.
+
+**Evidence:** Screenshot #3 — Okta IdP metadata import into SAML BOX.
 
 ### Current Status
 
