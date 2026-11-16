@@ -77,7 +77,28 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 - Did not publish raw metadata or certificate files to GitHub.
 - Certificate consistency was verified; SAML BOX signature validation and end-to-end authentication remain untested.
 
-### Current Status
+### Phase 5: Non-Admin Test User Assignment
+
+**Objective:** Provision application access for a non-administrative Okta test user while following least-privilege principles.
+
+**Implementation:**
+- Identified an existing non-admin test user in the Okta tenant.
+- Verified that the user's account status was Active.
+- Assigned the user directly to the IAM Portfolio - SAML Lab application.
+- Reviewed the application username during assignment.
+- Confirmed that the user appeared in the application's Assignments tab.
+
+**Validation Result:** PASS — The non-admin test user was successfully assigned to the SAML application.
+
+**Security Considerations:**
+- Used a non-administrative account for application access testing.
+- Limited provisioning to the intended SAML application.
+- Redacted the user's identifying information from the public screenshot.
+- End-to-end SAML authentication has not yet been tested.
+
+**Evidence — Screenshot #5:**
+
+[![Okta Non-Admin SAML Application Assignment](screenshots/05-okta-saml-test-user-assignment.png)](screenshots/05-okta-saml-test-user-assignment.png)
 
 The Okta application has been created and activated. End-to-end SAML authentication testing is still pending.
 ## Lab architecture
