@@ -60,6 +60,23 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 [![Okta SAML Trust Configuration](screenshots/04-okta-saml-trust-configuration.png)](screenshots/04-okta-saml-trust-configuration.png)
 
+### Phase 4: SAML Signing Certificate Verification
+
+**Objective:** Verify certificate consistency between the active Okta signing certificate and the certificate published in Okta IdP metadata.
+
+**Implementation:**
+- Downloaded the active X.509 signing certificate from Okta.
+- Extracted the embedded X.509 certificate from the Okta IdP metadata XML.
+- Used Windows CertUtil to inspect both certificates.
+- Compared their SHA-1 certificate fingerprints.
+
+**Validation Result:** PASS — Both certificate fingerprints matched, confirming that the metadata contains the same certificate as the active Okta signing certificate.
+
+**Security Considerations:**
+- Performed certificate comparison locally.
+- Did not publish raw metadata or certificate files to GitHub.
+- Certificate consistency was verified; SAML BOX signature validation and end-to-end authentication remain untested.
+
 ### Current Status
 
 The Okta application has been created and activated. End-to-end SAML authentication testing is still pending.
