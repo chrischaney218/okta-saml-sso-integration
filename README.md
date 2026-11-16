@@ -101,6 +101,49 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 [![Okta Non-Admin SAML Application Assignment](screenshots/05-%20sanitized-okta-saml-test-user-assignment.png)](screenshots/05-%20sanitized-okta-saml-test-user-assignment.png)
 
 
+### Phase 6: SAML SSO Authentication Testing
+
+**Objective:** Validate end-to-end SAML 2.0 Single Sign-On using Okta as the Identity Provider (IdP) and SAML BOX as the Service Provider (SP).
+
+**Authentication Method:** Identity Provider-Initiated (IdP-Initiated) SSO
+
+**Implementation:**
+- Opened a separate Chrome Incognito session to isolate the test user from the administrator session.
+- Authenticated to Okta using an active, non-administrative test account.
+- Confirmed the IAM Portfolio - SAML Lab application was visible on the user's Okta dashboard.
+- Launched the SAML application from the Okta dashboard.
+- Verified redirection to SAML BOX.
+- Confirmed that SAML BOX displayed "SSO Successful."
+
+**SAML Security Validation:**
+- Confirmed the SAML BOX success page reported "Signature Valid: Yes."
+- Observed a 10-minute assertion validity window.
+- Previously verified that the active Okta signing certificate matched the certificate embedded in the IdP metadata.
+- Used a non-administrative account to validate application access.
+
+**Test Results:**
+
+| Validation Test | Result |
+|---|---|
+| Non-admin Okta authentication | PASS |
+| SAML application assignment | PASS |
+| IdP-initiated application launch | PASS |
+| SAML BOX authentication | PASS |
+| SAML signature validation | PASS |
+| Assertion validity window displayed | PASS |
+
+**Overall Result:** PASS
+
+The IdP-initiated SAML SSO authentication test completed successfully. SAML BOX accepted the authentication flow and reported a valid digital signature.
+
+**Evidence — Screenshot #6:**
+
+[![Successful Okta SAML SSO Authentication](screenshots/06-okta-saml-sso-authentication-success.png)](screenshots/06-okta-saml-sso-authentication-success.png)
+
+**Security Note:** The publicly shared screenshot was cropped to exclude user identifiers, SAML response IDs, assertion IDs, and other potentially sensitive authentication data.
+
+
+
 ## Lab architecture
 ```mermaid
 flowchart LR
