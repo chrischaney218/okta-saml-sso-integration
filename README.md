@@ -100,7 +100,7 @@ Centralize application authentication with Okta, enforce MFA, and reduce relianc
 
 [![Okta Non-Admin SAML Application Assignment](screenshots/05-%20sanitized-okta-saml-test-user-assignment.png)](screenshots/05-%20sanitized-okta-saml-test-user-assignment.png)
 
-The Okta application has been created and activated. End-to-end SAML authentication testing is still pending.
+
 ## Lab architecture
 ```mermaid
 flowchart LR
