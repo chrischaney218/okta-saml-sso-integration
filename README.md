@@ -226,7 +226,7 @@ flowchart LR
 ## Test matrix
 | Test | Expected result | Actual result |
 | --- | --- | --- |
-| Assigned user with valid MFA | Successful sign-in | Not yet tested |
+| Assigned user with valid MFA | Successful sign-in | Successful |
 | Unassigned user | Access denied | Not yet tested |
 | Wrong audience or ACS URL | SAML validation failure | Not yet tested |
 | MFA denied | No session established | Not yet tested |
