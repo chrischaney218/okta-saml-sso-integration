@@ -143,6 +143,59 @@ The IdP-initiated SAML SSO authentication test completed successfully. SAML BOX 
 **Security Note:** The publicly shared screenshot was cropped to exclude user identifiers, SAML response IDs, assertion IDs, and other potentially sensitive authentication data.
 
 
+### Phase 7: Okta System Log Validation
+
+**Objective:** Validate successful SAML SSO authentication using Okta System Logs and correlate authentication activity with the configured SAML application.
+
+**Tools Used:**
+- Okta Admin Console
+- Okta System Log
+- SAML 2.0
+- Chrome Browser
+
+**Implementation:**
+1. Accessed the Okta Admin Console using an administrator account.
+2. Navigated to Reports > System Log.
+3. Filtered authentication events using `user.authentication.sso`.
+4. Located the SSO event associated with the non-admin test user.
+5. Expanded the event details to examine the authentication outcome.
+6. Confirmed that the event referenced the IAM Portfolio - SAML Lab application.
+
+**Authentication Event Analysis:**
+
+| Field | Observed Result |
+|---|---|
+| Event Type | user.authentication.sso |
+| Event Description | User single sign on to app |
+| Outcome | SUCCESS |
+| Target Application | IAM Portfolio - SAML Lab |
+| Client | Chrome on Windows 11 |
+| Authentication Method | IdP-Initiated SAML SSO |
+
+**Validation Result:** PASS
+
+The Okta System Log recorded a successful SSO event associated with the IAM Portfolio - SAML Lab application.
+
+This provided identity-provider-side audit evidence supporting the successful SAML authentication previously observed in SAML BOX.
+
+**Security Considerations:**
+- Used a non-administrative account for authentication testing.
+- Reviewed authentication events using administrator-level audit access.
+- Verified the application associated with the successful event.
+- Redacted usernames, IP addresses, and unique identifiers from the public evidence.
+
+**Evidence — Screenshot #7:**
+
+[![Okta System Log SSO Validation](screenshots/07-okta-system-log-sso-validation.png)](screenshots/07-okta-system-log-sso-validation.png)
+
+**Skills Demonstrated:**
+- Okta System Log analysis
+- SAML SSO troubleshooting
+- Authentication event correlation
+- Identity security monitoring
+- Audit log validation
+- Security-conscious technical documentation
+
 
 ## Lab architecture
 ```mermaid
